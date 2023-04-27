@@ -16,12 +16,12 @@ explore: events {
 
   persist_with: events_raw
 
-  always_filter: {
-    filters: {
-      field: event_date
-      value: "last 7 days"
-    }
-  }
+  # always_filter: {
+  #   filters: {
+  #     field: event_date
+  #     value: "last 7 days"
+  #   }
+  # }
 
   join: session_facts {
     relationship: many_to_one
